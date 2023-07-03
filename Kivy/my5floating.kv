@@ -1,0 +1,17 @@
+<Button>:
+    font_size: 40
+    color: 0.3, 0.6, 0.7, 1
+    size_hint: 0.3, 0.5
+
+
+<FloatLayout>:
+    Button:
+        #pos: 40,50
+        #pos_hist: {"x", "y", "top", "bottom", "left", "right"}
+        pos_hint: {"x": 0.1, "top": 0.9}
+        text: "Lena"
+    Button:
+        id: btn
+        pos_hint: {"x": 0.6, "top": 0.6}
+        text: "Przycisk" if btn.state == "normal" else "NIC"
+        background_color: .8,.6,.1,1

@@ -1,0 +1,30 @@
+<MyGrid>:
+    name: name
+    surname: surname
+    year: year_of_birth
+    GridLayout:
+        cols: 1
+        #size: 800, 600
+        size: root.width, root.height
+        GridLayout:
+            cols:2
+            Label:
+                text: "Name"
+            TextInput:
+                id: name
+                multiline: False
+            Label:
+                text: "Surname"
+            TextInput:
+                id: surname
+                multiline: False
+            Label:
+                color: 0, 1, 0, 1
+                text: "Year of birth"
+            TextInput:
+                id: year_of_birth
+                multiline: False
+        Button:
+            background_color: 1, 0, 0, 1
+            text: "Submit"
+            on_press: root.btn()
